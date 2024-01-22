@@ -7,6 +7,8 @@
 // wC5IvfGhhYbG+7dH/Z/iYRG1JHovxsOlvXPz7ccAkOpI2lMv+dix0CqCVdHq7ALr
 // JNf56O28Uy2Y2lv+zbHoJQ==
 
+header("Access-Control-Allow-Origin: *");
+
 $totalSentString = file_get_contents("total_sent.txt");
 if ($totalSentString==NULL || trim($totalSentString)=="") {
     $totalSentString = "0";

